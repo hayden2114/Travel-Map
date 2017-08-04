@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		7527F2451F1D07D500BD277C /* GuideViewerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7527F2441F1D07D500BD277C /* GuideViewerViewController.swift */; };
+		756561BD1F34B58700DCC662 /* problem1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 756561BC1F34B58700DCC662 /* problem1.swift */; };
 		757E6BB81F278CCB001B8BD3 /* AllTheGuidesModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 757E6BB71F278CCB001B8BD3 /* AllTheGuidesModel.swift */; };
 		759322B41F1BB57500FB2331 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 759322B31F1BB57500FB2331 /* AppDelegate.swift */; };
 		759322B61F1BB57500FB2331 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 759322B51F1BB57500FB2331 /* MapViewController.swift */; };
@@ -15,7 +16,6 @@
 		759322BB1F1BB57500FB2331 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 759322B91F1BB57500FB2331 /* Main.storyboard */; };
 		759322BD1F1BB57500FB2331 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 759322BC1F1BB57500FB2331 /* Assets.xcassets */; };
 		759322C01F1BB57500FB2331 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 759322BE1F1BB57500FB2331 /* LaunchScreen.storyboard */; };
-		759322C81F1BB5B300FB2331 /* problem1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 759322C71F1BB5B300FB2331 /* problem1.swift */; };
 		759322CA1F1BB5D300FB2331 /* problem2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 759322C91F1BB5D300FB2331 /* problem2.swift */; };
 		759322CC1F1BB5E800FB2331 /* problem3.swift in Sources */ = {isa = PBXBuildFile; fileRef = 759322CB1F1BB5E800FB2331 /* problem3.swift */; };
 		759322CE1F1BB5FB00FB2331 /* problem4.swift in Sources */ = {isa = PBXBuildFile; fileRef = 759322CD1F1BB5FB00FB2331 /* problem4.swift */; };
@@ -29,6 +29,7 @@
 /* Begin PBXFileReference section */
 		305497B89CEE3E0E2A387B85 /* Pods-final-project.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-final-project.release.xcconfig"; path = "Pods/Target Support Files/Pods-final-project/Pods-final-project.release.xcconfig"; sourceTree = "<group>"; };
 		7527F2441F1D07D500BD277C /* GuideViewerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GuideViewerViewController.swift; sourceTree = "<group>"; };
+		756561BC1F34B58700DCC662 /* problem1.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = problem1.swift; sourceTree = "<group>"; };
 		757E6BB71F278CCB001B8BD3 /* AllTheGuidesModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AllTheGuidesModel.swift; sourceTree = "<group>"; };
 		759322B01F1BB57500FB2331 /* final-project.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "final-project.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		759322B31F1BB57500FB2331 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -38,7 +39,6 @@
 		759322BC1F1BB57500FB2331 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		759322BF1F1BB57500FB2331 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		759322C11F1BB57500FB2331 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		759322C71F1BB5B300FB2331 /* problem1.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = problem1.swift; sourceTree = "<group>"; };
 		759322C91F1BB5D300FB2331 /* problem2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = problem2.swift; sourceTree = "<group>"; };
 		759322CB1F1BB5E800FB2331 /* problem3.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = problem3.swift; sourceTree = "<group>"; };
 		759322CD1F1BB5FB00FB2331 /* problem4.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = problem4.swift; sourceTree = "<group>"; };
@@ -102,7 +102,7 @@
 				759322BC1F1BB57500FB2331 /* Assets.xcassets */,
 				759322BE1F1BB57500FB2331 /* LaunchScreen.storyboard */,
 				759322C11F1BB57500FB2331 /* Info.plist */,
-				759322C71F1BB5B300FB2331 /* problem1.swift */,
+				756561BC1F34B58700DCC662 /* problem1.swift */,
 				759322C91F1BB5D300FB2331 /* problem2.swift */,
 				759322CB1F1BB5E800FB2331 /* problem3.swift */,
 				759322CD1F1BB5FB00FB2331 /* problem4.swift */,
@@ -251,7 +251,7 @@
 				759322B41F1BB57500FB2331 /* AppDelegate.swift in Sources */,
 				759322B61F1BB57500FB2331 /* MapViewController.swift in Sources */,
 				75E281971F2641B2008BF821 /* AvailableLocationsModel.swift in Sources */,
-				759322C81F1BB5B300FB2331 /* problem1.swift in Sources */,
+				756561BD1F34B58700DCC662 /* problem1.swift in Sources */,
 				75C820221F1BD5DE00A8B5BA /* CityGuidesTableViewController.swift in Sources */,
 				759322CC1F1BB5E800FB2331 /* problem3.swift in Sources */,
 				7527F2451F1D07D500BD277C /* GuideViewerViewController.swift in Sources */,
