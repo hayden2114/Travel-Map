@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12118" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -21,12 +22,68 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="travelmap" translatesAutoresizingMaskIntoConstraints="NO" id="ASr-ng-elM">
-                                <rect key="frame" x="94" y="188" width="187" height="171"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Jacquelyn, welcome to Travel Map!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="loe-bo-1Dv">
+                                <rect key="frame" x="16" y="158" width="343" height="32"/>
+                                <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="22"/>
+                                <color key="textColor" red="0.99991279840000002" green="1" blue="0.99988144639999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Made with love" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PkC-yV-Rfi">
+                                <rect key="frame" x="122" y="564" width="131" height="26"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="131" id="WwF-MI-ZqE"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="18"/>
+                                <color key="textColor" red="0.96070033310000003" green="0.96083813910000004" blue="0.96067017320000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="- Hayden " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dv1-qA-mcK">
+                                <rect key="frame" x="150" y="598" width="77" height="25"/>
+                                <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="17"/>
+                                <color key="textColor" red="0.99991279840000002" green="1" blue="0.99988144639999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Happy_Birthday" translatesAutoresizingMaskIntoConstraints="NO" id="ANW-R4-IXP">
+                                <rect key="frame" x="16" y="41" width="343" height="90"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="90" id="mBA-mK-2Zm"/>
+                                </constraints>
                             </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="present" translatesAutoresizingMaskIntoConstraints="NO" id="qsm-0e-elr">
+                                <rect key="frame" x="117" y="395" width="141" height="141"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="141" id="3hK-Ko-oOt"/>
+                                    <constraint firstAttribute="height" constant="141" id="YX0-XM-hQY"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="My birthday present to you!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="I33-hB-g7N">
+                                <rect key="frame" x="50" y="332" width="277" height="45"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="45" id="xfJ-CD-mMd"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="21"/>
+                                <color key="textColor" red="0.99991279840000002" green="1" blue="0.99988144639999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="0.31250062579999999" green="0.43002137540000002" blue="0.79375606779999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="ANW-R4-IXP" secondAttribute="trailing" id="2Ks-nv-su4"/>
+                            <constraint firstItem="dv1-qA-mcK" firstAttribute="top" secondItem="PkC-yV-Rfi" secondAttribute="bottom" constant="8" id="8bJ-CY-wNL"/>
+                            <constraint firstItem="qsm-0e-elr" firstAttribute="top" secondItem="I33-hB-g7N" secondAttribute="bottom" constant="18" id="8id-O8-C9L"/>
+                            <constraint firstItem="I33-hB-g7N" firstAttribute="centerX" secondItem="dv1-qA-mcK" secondAttribute="centerX" id="Fpl-ut-HI3"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="ANW-R4-IXP" secondAttribute="leading" id="I7P-f6-Lhr"/>
+                            <constraint firstItem="xb3-aO-Qok" firstAttribute="top" secondItem="dv1-qA-mcK" secondAttribute="bottom" constant="44" id="Khu-s2-8eq"/>
+                            <constraint firstItem="loe-bo-1Dv" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="UEP-FI-DfW"/>
+                            <constraint firstItem="dv1-qA-mcK" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" constant="1" id="Vko-Ph-aap"/>
+                            <constraint firstItem="I33-hB-g7N" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leadingMargin" constant="34" id="Wtd-J5-Z1f"/>
+                            <constraint firstItem="qsm-0e-elr" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="fxJ-4G-4aM"/>
+                            <constraint firstItem="ANW-R4-IXP" firstAttribute="top" secondItem="Llm-lL-Icb" secondAttribute="bottom" constant="21" id="i7M-qw-kR2"/>
+                            <constraint firstItem="ANW-R4-IXP" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="jW4-Cm-Rbq"/>
+                            <constraint firstItem="PkC-yV-Rfi" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="r6a-a5-I0T"/>
+                            <constraint firstItem="loe-bo-1Dv" firstAttribute="top" secondItem="ANW-R4-IXP" secondAttribute="bottom" constant="27" id="rec-ge-n5h"/>
+                            <constraint firstItem="PkC-yV-Rfi" firstAttribute="top" secondItem="qsm-0e-elr" secondAttribute="bottom" constant="28" id="v6b-xN-CjB"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -35,6 +92,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="travelmap" width="166" height="166"/>
+        <image name="Happy_Birthday" width="8000" height="1136"/>
+        <image name="present" width="160" height="160"/>
     </resources>
 </document>

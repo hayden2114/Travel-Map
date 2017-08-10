@@ -44,14 +44,27 @@ class GuideEditorViewController: UIViewController, UIPickerViewDelegate, UIPicke
     var tripTitle: String?
     var tripOverview: String = ""
     
+    lazy var toolbar: RichEditorToolbar = {
+        let toolbar = RichEditorToolbar(frame: CGRect(x: 0, y: 0, width: self.view.bounds.width, height: 44))
+        toolbar.options = RichEditorDefaultOption.all
+        return toolbar
+    }()
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         tripOverviewField.delegate = self
+        tripOverviewField.inputAccessoryView = toolbar
+        
+        toolbar.delegate = self as? RichEditorToolbarDelegate
+        toolbar.editor = tripOverviewField
+
         
         self.navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Done", style: .done, target: self, action: #selector(self.handleAction(_:)))
         
+        //NotificationCenter.default.addObserver(self, selector: #selector(GuideEditorViewController.keyboardWillShow), name: NSNotification.Name.UIKeyboardWillShow, object: nil)
+        //NotificationCenter.default.addObserver(self, selector: #selector(GuideEditorViewController.keyboardWillHide), name: NSNotification.Name.UIKeyboardWillHide, object: nil)
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -59,6 +72,22 @@ class GuideEditorViewController: UIViewController, UIPickerViewDelegate, UIPicke
         pickerData = availableLocations.locations
         self.itemsChanged()
     }
+    
+    /*func keyboardWillShow(notification: NSNotification) {
+        if let keyboardSize = (notification.userInfo?[UIKeyboardFrameBeginUserInfoKey] as? NSValue)?.cgRectValue {
+            if self.view.frame.origin.y == 0{
+                self.view.frame.origin.y -= keyboardSize.height
+            }
+        }
+    }*/
+    
+    /*func keyboardWillHide(notification: NSNotification) {
+        if let keyboardSize = (notification.userInfo?[UIKeyboardFrameBeginUserInfoKey] as? NSValue)?.cgRectValue {
+            if self.view.frame.origin.y != 0{
+                self.view.frame.origin.y += keyboardSize.height //- 50
+            }
+        }
+    }*/
 
     
     @IBOutlet weak var cityPicker: UIPickerView! {
