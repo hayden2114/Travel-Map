@@ -35,7 +35,7 @@ class AvailableLocations {
         location(cityCommaCountry: "Cabo, Mexico", coordinate: CLLocationCoordinate2D(latitude: 22.887201, longitude: -109.905038)),
         // SE Asia
         location(cityCommaCountry: "Bangkok, Thailand", coordinate: CLLocationCoordinate2D(latitude: 13.756331, longitude: 100.501765)),
-        location(cityCommaCountry: "Chiang Mai, Thailand", coordinate: CLLocationCoordinate2D(latitude: 18.786626, longitude: 98.983727)),
+        /*location(cityCommaCountry: "Chiang Mai, Thailand", coordinate: CLLocationCoordinate2D(latitude: 18.786626, longitude: 98.983727)),
         location(cityCommaCountry: "Pai, Thailand", coordinate: CLLocationCoordinate2D(latitude: 19.358219, longitude: 98.440486)),
         location(cityCommaCountry: "Ko Phi Phi, Thailand", coordinate: CLLocationCoordinate2D(latitude: 7.740738, longitude: 98.778410)),
         location(cityCommaCountry: "Ko Pha Ngan, Thailand", coordinate: CLLocationCoordinate2D(latitude: 9.747876, longitude: 100.023308)),
@@ -47,7 +47,7 @@ class AvailableLocations {
         location(cityCommaCountry: "Halong Bay, Vietnam", coordinate: CLLocationCoordinate2D(latitude: 20.957823, longitude: 107.064514)),
         location(cityCommaCountry: "Hue, Vietnam", coordinate: CLLocationCoordinate2D(latitude: 16.449800, longitude: 107.562350)),
         location(cityCommaCountry: "Hoi An, Vietnam", coordinate: CLLocationCoordinate2D(latitude: 15.880058, longitude: 108.338047)),
-        location(cityCommaCountry: "Ho Chi Minh, Vietnam", coordinate: CLLocationCoordinate2D(latitude: 10.823099, longitude: 106.629664)),
+        location(cityCommaCountry: "Ho Chi Minh, Vietnam", coordinate: CLLocationCoordinate2D(latitude: 10.823099, longitude: 106.629664)),*/
         location(cityCommaCountry: "Hong Kong, China", coordinate: CLLocationCoordinate2D(latitude: 22.283835, longitude: 114.173355)),
         location(cityCommaCountry: "El Nido, Phillipines", coordinate: CLLocationCoordinate2D(latitude: 11.209709, longitude: 119.462254)),
         // Africa

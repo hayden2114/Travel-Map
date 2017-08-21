@@ -63,8 +63,7 @@ class GuideEditorViewController: UIViewController, UIPickerViewDelegate, UIPicke
         
         self.navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Done", style: .done, target: self, action: #selector(self.handleAction(_:)))
         
-        //NotificationCenter.default.addObserver(self, selector: #selector(GuideEditorViewController.keyboardWillShow), name: NSNotification.Name.UIKeyboardWillShow, object: nil)
-        //NotificationCenter.default.addObserver(self, selector: #selector(GuideEditorViewController.keyboardWillHide), name: NSNotification.Name.UIKeyboardWillHide, object: nil)
+        
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -73,21 +72,6 @@ class GuideEditorViewController: UIViewController, UIPickerViewDelegate, UIPicke
         self.itemsChanged()
     }
     
-    /*func keyboardWillShow(notification: NSNotification) {
-        if let keyboardSize = (notification.userInfo?[UIKeyboardFrameBeginUserInfoKey] as? NSValue)?.cgRectValue {
-            if self.view.frame.origin.y == 0{
-                self.view.frame.origin.y -= keyboardSize.height
-            }
-        }
-    }*/
-    
-    /*func keyboardWillHide(notification: NSNotification) {
-        if let keyboardSize = (notification.userInfo?[UIKeyboardFrameBeginUserInfoKey] as? NSValue)?.cgRectValue {
-            if self.view.frame.origin.y != 0{
-                self.view.frame.origin.y += keyboardSize.height //- 50
-            }
-        }
-    }*/
 
     
     @IBOutlet weak var cityPicker: UIPickerView! {
